@@ -1,3 +1,5 @@
+# Mutex tasks
+
 1. When do you need to use a mutex?
 
 2. Research what contention is. How does it relate to locking?
@@ -13,7 +15,7 @@ type ThreadSafeMap struct {
 }
 
 // Get returns a pointer to the integer and whether the key was in the map
-func (m *ThreadSafeMap) Get(key string) (*int, bool) {}
+func (m *ThreadSafeMap) Get(key string) (int, bool) {}
 
 // Put inserts the key into the map with the value "value". It should overwrite any value that is already there for that key
 func (m *ThreadSafeMap) Put(key string, value int) {}
